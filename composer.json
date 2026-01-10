@@ -1,0 +1,33 @@
+{
+    "name": "maaf/devtools",
+    "description": "MAAF DevTools Package - Request inspector (Telescope-like), module-level log view, and query profiler",
+    "type": "library",
+    "keywords": ["maaf", "devtools", "telescope", "inspector", "profiler", "debug"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bloch Tamás",
+            "email": "info@bloch.hu"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "maaf/core": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5",
+        "phpstan/phpstan": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MAAF\\DevTools\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MAAF\\DevTools\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
